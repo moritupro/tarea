@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesto</title>
+</head>
+<body>
+    <h1>Mayoria de edad</h1>
+    <script>
+        function verificarMayoriaEdad(nombre, edad) {
+            if (edad >= 18) {
+                return `${nombre} es mayor de edad.`;
+            } else {
+                return `${nombre} no es mayor de edad.`;
+            }
+        }   
+
+        const nombre1 = "Carlos";
+        const edad1 = 20;
+        const resultado1 = verificarMayoriaEdad(nombre1, edad1);
+
+        const nombre2 = "Ana";
+        const edad2 = 16;
+        const resultado2 = verificarMayoriaEdad(nombre2, edad2);
+
+        document.write(`<p>${resultado1}</p>`);
+        document.write(`<p>${resultado2}</p>`);
+    </script>
+</body>
+</html>
